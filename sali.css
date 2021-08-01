@@ -1,0 +1,287 @@
+*{box-sizing: border-box;
+margin: 0;}
+
+
+
+body{height: 100%;
+display: flex;
+
+flex-direction: column;
+
+}
+header{margin-top: 0;
+    width: 100%;
+}
+
+img{
+    width: 200px;
+}
+nav{background-color: white;
+    flex-grow: 1;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+nav a{color:gray;
+    display: block;
+    padding: 25px;  
+    text-align: center;
+    
+    text-decoration: none;
+}
+nav i{display: none;
+cursor: pointer;
+font-size: 30px;
+margin-right: 20px;
+color: gray;
+opacity: 0;
+}
+
+
+
+
+
+nav a:hover{
+
+    background-color: rgb(198, 213, 218);
+
+}
+
+
+    /* bis hier header.............*/
+
+
+main{
+   
+height: 80%;
+width: 100%;}
+
+
+
+#hintegrund{height: 100%;
+    position: relative;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#bild1{background-image: url("bild1.jpg");}
+#bild2{background-image: url("bild2.jpg");}
+#bild3{background-image: url("bild3.jpg");}
+#bild4{background-image: url("grass.jpg");}
+
+#bild1,#bild2,#bild3{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    transition: display 1s;
+    
+    
+    
+    }
+
+    
+
+    #bild3, #bild2,#bild4{display: none;}
+
+    .arkaplan{background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity:30%;
+        position: absolute;
+      }
+
+    #write1{
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: white;
+        font-size: bold;
+    }
+
+    #write2,#write3{display: none;}
+
+    #reight,#left{
+
+        position: absolute;
+        font-size: 40px;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+    }
+
+    #reight{
+        right: 30px;
+
+    }
+
+    #left{left: 30px;}
+
+    #reight:hover{
+        color: white;
+    }
+    #left:hover{
+        color: white;
+    }
+
+    span{text-align: center;
+        display: flex;
+        color: gray;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        
+        }
+
+        #uberuns{display: none;}
+        
+       
+       
+        #kontakt{
+        display: none;
+        justify-content: center;
+        align-items: center
+        
+        }
+
+
+        
+        #info{width: 40%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 10px;
+        background-color: rgb(221, 238, 221);
+        margin: 10px;
+        }
+        
+        input{margin: 10px 50px;
+            outline: none;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;}
+        
+        #senden{
+            background-color: darkorange;
+            border-radius: 6px;
+            margin: 20px;
+            padding: 10px;
+            outline: none;
+            border: none;
+        }
+        
+        #massege{padding: 70px;
+        
+        
+        
+        }
+
+    .symbol,.team{margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+       
+        text-align: center;
+     justify-content: center;
+     align-items: center;
+     
+flex-wrap: wrap;
+
+
+    }
+    .symbol>div,.team1{flex-grow: 1;
+ }
+
+  .symbol>div>i{color:white;
+        font-size: 50px;
+   margin-bottom: 10px;
+   border-radius: 50%;
+   background-color: rgb(84, 174, 185);
+  padding: 30px;
+    }
+
+    #linie{width: 90%;
+        border-top: 4px solid #5b7deb;
+        margin: 50px;
+    }
+    
+.grup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+/*bis hier maen......................*/
+footer{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    background: #f0f2f9;
+  margin-top: 30px;
+  margin-bottom: 10px;}
+
+  footer>div{margin-top: 30px;
+    flex-wrap: wrap;}
+
+  footer>.links>img{height: 50px;}
+
+  footer>.links{width: 33%;
+    flex-grow: 1;
+  
+  text-align: center;}
+
+  footer>.mittel{text-align: center;
+    width: 33%;}
+
+  footer>.rechts{width: 33%;}
+
+@media(max-width:500px){
+    img{justify-content: flex-start;
+    align-items: flex-start;}
+
+    .symbol,.team{flex-direction: column;}
+
+    nav{
+
+        align-items: flex-end;
+        flex-direction:column-reverse;
+     
+    }
+    
+    nav a{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+    }
+
+    nav i{ 
+opacity: 100%;
+        padding: 20px;
+    }
+
+   footer{justify-self: center;
+    align-items: center;
+       flex-direction: column;
+   }
+       
+    }
+ 
+
+
+ 
+
